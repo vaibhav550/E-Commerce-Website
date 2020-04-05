@@ -1,0 +1,26 @@
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    background-color:blue;
+    max-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    color: white;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+}
+.zoom{
+    
+    transition: transform .5s;
+    
+}
+.zoom:hover {
+  transform: scale(1.2);
+}

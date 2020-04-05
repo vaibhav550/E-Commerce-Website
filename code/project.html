@@ -1,0 +1,470 @@
+<html>
+    <head>
+        <title>BrandLance</title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+        .mySlides {display:none;}
+            
+        *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .center{
+                position: absolute;
+                left: 8%;
+                top: 48%;
+                width: 100%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                
+            }
+            .btn{
+                display: inline-block;
+                width: 90px;
+                height: 90px;
+                background-color: gold;
+                margin: 10px;
+                border-radius: 30%;
+                box-shadow: 0 5px 15px -5px red;
+                overflow: hidden;
+                position: relative;
+                color: darkblue;
+                
+            }
+            .btn i{
+                font-size: 26px;
+                line-height: 90px;
+                transition: .2s linear;
+            }
+            .btn:hover i{
+                transform: scale(1.5);
+                color: white;
+            }
+            .btn::before{
+                content: "";
+                position: absolute;
+                width: 120%;
+                height: 120%;
+                background-color: #679cdb;
+                transform: rotate(45deg);
+                left: -110%;
+                top:90%;
+                
+            }
+            .btn:hover::before{
+                animation: aaa .9s 1;
+                top: -10%;
+                left: -10%;
+            }
+            @keyframes aaa{
+                0%{
+                    left: -110%;
+                    top:90%;
+                }
+                50%{
+                    left: 10%;
+                    top: -30%;
+                }
+                100%{
+                    left: -10%;
+                top:-10%;
+                }
+                
+            }
+        </style>
+        
+    </head>
+
+<body bgcolor="#F1F3F6">
+
+        <table border="0" width="100%" bgcolor="#2874F0">
+
+            <tr>
+                <td align="right" style="color: red"><b>BRANDLANCE</b></td>
+                    <td><input type="text" placeholder="Search for products, brands and more" style="width:550px;height:35px;"><input type="button" value="Search" style="width:120px;height: 35px"></td>
+                    <th><font color="white"><a href="login.html">Login</a></font></th>
+                    <th><font color="white"><a href="signup.html">Signup</a></font></th>
+                    <th><font color="white">More</font></th>
+                    <th><img src="cart.png"></th>
+            </tr>
+        </table>
+
+
+        <table border="0" width="100%" bgcolor="white" height="8%">
+            <tr>
+                <th width="12.5%">
+                   <div class="dropdown">
+                      <span>Offer Zone</span>
+                        <div class="dropdown-content">
+                            <p>Perfumes</p>
+                            <p>Skin Care</p>
+                            <p>Watches</p>
+                            <p>Headphones</p>
+                        </div>
+                  </div>
+                </th>
+                
+                <th width="12.5%">
+                 <div class="dropdown">
+                 <span>Electronics</span>
+                  <div class="dropdown-content">
+                      <p>Mobiles</p>
+                      <p>Laptop</p>
+                      <p>fridges</p>
+                      <p>tablets</p>
+                  </div>
+                 </div>
+                </th>
+                <th width="12.5%">
+                    <div class="dropdown">
+                    <span>TVs & Appliances</span>
+                    <div class="dropdown-content">
+                         <p>Heater</p>
+                         <p>Cooler</p>
+                         <p>Washing machine</p>
+                         <p>Motors</p>
+                     </div>  
+                  </div>
+                </th>
+                <th width="12.5%">
+                  <div class="dropdown">
+                      <span>Men</span>
+                       <div class="dropdown-content">
+                           <p>Shirts</p>
+                           <p>Jeans</p>
+                           <p>Trousers</p>
+                           <p>Jackets</p>
+                       </div>
+                  </div>
+                </th>
+                <th width="12.5%">
+                  <div class="dropdown">
+                      <span>Women</span>
+                        <div class="dropdown-content">
+                            <p>Westernwear</p>
+                            <p>Ethnicwear</p>
+                            <p>Accessories</p>
+                            <p>Footwear</p>
+                        </div>
+                  </div>
+                </th>
+                <th width="12.5%">
+                  <div class="dropdown">
+                      <span>Baby & Kids</span>
+                        <div class="dropdown-content">
+                            <p>Tshirts</p>
+                            <p>Ethic Wear</p>
+                            <p>Footwear</p>
+                            <p>Infant Wear</p>
+                        </div>
+                  </div>
+                </th>
+                <th width="12.5%">
+                   <div class="dropdown">
+                      <span>Home & Furniture</span>
+                        <div class="dropdown-content">
+                            <p>Beds</p>
+                            <p>Study Tables</p>
+                            <p>Dining Table</p>
+                            <p>Mattresses</p>
+                        </div>
+                  </div>
+                </th>
+                <th width="12.5%">
+                  <div class="dropdown">
+                      <span>Sports</span>
+                        <div class="dropdown-content">
+                            <p>Cricket Kit</p>
+                            <p>Football</p>
+                            <p>Tennis Ball</p>
+                            <p>Wicket</p>
+                        </div>
+                  </div>
+                </th>
+                
+            </tr>
+        </table>
+
+                <div class="w3-content w3-section" style="max-width:auto">
+          <img class="mySlides" src="banner1.jpg" style="width:110%">
+          <img class="mySlides" src="banner12.jpg" style="width:110%">
+          <img class="mySlides" src="banner21.jpg" style="width:110%">
+          <img class="mySlides" src="banner3.jpg" style="width:110%">
+          <img class="mySlides" src="banner4.jpg" style="width:110%">
+        </div>
+
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+       
+
+        <br><br>
+        <table border="0" width="100%" bgcolor="white">
+            <tr>
+                <td colspan="5"><h2><b>TEDDY</b></h2><hr></td>
+            <tr >
+                <th class="zoom"><img src="teddy1.png" width="75%"></th>
+                <th class="zoom"><img src="teddy2.png" width="75%"></th>
+                <th class="zoom"><img src="teddy3.png" width="75%"></th>
+                <th class="zoom"><img src="teddy4.png" width="75%"></th>
+                <th class="zoom"><img src="teddy5.png" width="75%"></th>
+            </tr>
+            <tr>
+                <th><font color="green">price:599/-</font></th>
+                <th><font color="green">price:399/-</font></th>
+                <th><font color="green">price:499/-</font></th>
+                <th><font color="green">price:299/-</font></th>
+                <th><font color="green">price:199/-</font></th>
+            </tr>
+            <th><a href="tdetail1.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="tdetail2.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="tdetail3.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="tdetail4.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="tdetail5.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            
+            
+        </table>
+
+        <br>
+        <table border="0" width="100%" bgcolor="white">
+            <tr>
+                <td colspan="5"><h2><B>EARPHONES</B></h2><hr></td>
+            <tr>
+                <th class="zoom"><img src="earphone1.png" width="75%"></th>
+                <th class="zoom"><img src="earphone2.png" width="75%"></th>
+                <th class="zoom"><img src="earphone3.png" width="75%"></th>
+                <th class="zoom"><img src="earphone4.png" width="75%"></th>
+                <th class="zoom"><img src="earphone5.png" width="75%"></th>
+            </tr>
+             <tr>
+                <th><font color="green">price:599/-</font></th>
+                <th><font color="green">price:399/-</font></th>
+                <th><font color="green">price:499/-</font></th>
+                <th><font color="green">price:299/-</font></th>
+                <th><font color="green">price:199/-</font></th>
+            </tr>
+            <th><a href="edetail1.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="edetail2.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="edetail3.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="edetail4.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="edetail5.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+        </table>
+        
+        <br>
+        <table border="0" width="100%" bgcolor="white">
+            <tr>
+                <td colspan="5"><h2><B>FAST FOOD</B></h2><hr></td>
+            <tr>
+                <th class="zoom"><img src="pic3.jpg" width="75%"></th>
+                <th class="zoom"><img src="pic4.jpg" width="75%"></th>
+                <th class="zoom"><img src="pic5.jpg" width="75%"></th>
+                <th class="zoom"><img src="pic6.jpg" width="75%"></th>
+                <th class="zoom"><img src="pic8.jpg" width="75%"></th>
+            </tr>
+            <tr>
+                <th><font color="green">price:99/-</font></th>
+                <th><font color="green">price:399/-</font></th>
+                <th><font color="green">price:499/-</font></th>
+                <th><font color="green">price:299/-</font></th>
+                <th><font color="green">price:199/-</font></th>
+            </tr>
+            <th><a href="fdetail1.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="fdetail2.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="fdetail3.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="fdetail4.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="fdetail5.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+        </table>
+        
+        
+        <br>
+        <table border="0" width="100%" bgcolor="white">
+            <tr>
+                <td colspan="5"><h2><B>CLOTHES</B></h2><hr></td>
+            <tr>
+                <th class="zoom"><img src="T1.jpg" width="75%"></th>
+                <th class="zoom"><img src="T10.jpg" width="75%"></th>
+                <th class="zoom"><img src="T12.jpg" width="75%"></th>
+                <th class="zoom"><img src="T5.jpg" width="75%"></th>
+                <th class="zoom"><img src="T7.jpg" width="75%"></th>
+            </tr>
+            <tr>
+                <th><font color="green">price:599/-</font></th>
+                <th><font color="green">price:399/-</font></th>
+                <th><font color="green">price:499/-</font></th>
+                <th><font color="green">price:299/-</font></th>
+                <th><font color="green">price:199/-</font></th>
+            </tr>
+            <th><a href="cdetail1.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="cdetail2.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="cdetail3.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="cdetail4.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="cdetail5.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+        </table>
+        
+        
+        <br>
+        <table border="0" width="100%" bgcolor="white">
+            <tr>
+                <td colspan="5"><h2><B>KITCHEN APPLIANCES</B></h2><hr></td>
+            <tr>
+                <th class="zoom"><img src="kitchen1.png" width="75%"></th>
+                <th class="zoom"><img src="kitchen2.png" width="75%"></th>
+                <th class="zoom"><img src="kitchen3.png" width="75%"></th>
+                <th class="zoom"><img src="kitchen4.png" width="75%"></th>
+                <th class="zoom"><img src="kitchen5.png" width="75%"></th>
+            </tr>
+            <tr>
+                <th><font color="green">price:599/-</font></th>
+                <th><font color="green">price:399/-</font></th>
+                <th><font color="green">price:499/-</font></th>
+                <th><font color="green">price:299/-</font></th>
+                <th><font color="green">price:199/-</font></th>
+            </tr>
+            <th><a href="kdetail1.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="kdetail2.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="kdetail3.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="kdetail4.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="kdetail5.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+        </table>
+
+        <br>
+        <table border="0" width="100%" bgcolor="white">
+            <tr>
+                <td colspan="5"><h2><B>MOBILE PHONES</B></h2><hr></td>
+            <tr>
+                <th class="zoom"><img src="mobile1.png" width="75%"></th>
+                <th class="zoom"><img src="mobile2.png" width="75%"></th>
+                <th class="zoom"><img src="mobile3.png" width="75%"></th>
+                <th class="zoom"><img src="mobile4.png" width="75%"></th>
+                <th class="zoom"><img src="mobile5.png" width="75%"></th>
+            </tr>
+            <tr>
+                <th><font color="green">price:599/-</font></th>
+                <th><font color="green">price:399/-</font></th>
+                <th><font color="green">price:499/-</font></th>
+                <th><font color="green">price:299/-</font></th>
+                <th><font color="green">price:199/-</font></th>
+            </tr>
+            <th><a href="mdetail1.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="mdetail2.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="mdetail3.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="mdetail4.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="mdetail5.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+        </table>
+
+        <br>
+        <table border="0" width="100%" bgcolor="white">
+            <tr>
+                <td colspan="5"><h2><B>PENDRIVES</B></h2><hr></td>
+            <tr>
+                <th class="zoom"><img src="pendrive1.png" width="75%"></th>
+                <th class="zoom"><img src="pendrive2.png" width="75%"></th>
+                <th class="zoom"><img src="pendrive3.png" width="75%"></th>
+                <th class="zoom"><img src="pendrive4.png" width="75%"></th>
+                <th class="zoom"><img src="pendrive5.png" width="75%"></th>
+            </tr>
+            <tr>
+                <th><font color="green">price:599/-</font></th>
+                <th><font color="green">price:399/-</font></th>
+                <th><font color="green">price:499/-</font></th>
+                <th><font color="green">price:299/-</font></th>
+                <th><font color="green">price:199/-</font></th>
+            </tr>
+            <th><a href="pdetail1.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="pdetail2.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="pdetail3.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="pdetail4.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="pdetail5.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+        </table>
+
+        <br>
+        <table border="0" width="100%" bgcolor="white">
+            <tr>
+                <td colspan="5"><h1><b>MOUSE</b></h1><hr></td>
+            <tr>
+                <th class="zoom"><img src="mouse1.png" width="75%"></th>
+                <th class="zoom"><img src="mouse2.png" width="75%"></th>
+                <th class="zoom"><img src="mouse3.png" width="75%"></th>
+                <th class="zoom"><img src="mouse4.png" width="75%"></th>
+                <th class="zoom"><img src="mouse5.png" width="75%"></th>
+            </tr>
+            <tr>
+                <th><font color="green">price:599/-</font></th>
+                <th><font color="green">price:399/-</font></th>
+                <th><font color="green">price:499/-</font></th>
+                <th><font color="green">price:299/-</font></th>
+                <th><font color="green">price:199/-</font></th>
+            </tr>
+            <th><a href="ndetail1.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="ndetail2.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="ndetail3.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="ndetail4.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+            <th><a href="ndetail5.html"><input type="button" value="Show Details" style="width:150px;height:30px;background-color:blue;color:white"></a></th>
+        </table>
+        <br>
+        
+        <table border="0px" width="100%" height="40%" bgcolor="blue">
+           <tr>
+               <th bgcolor="black" width="25%" height="20%"><font color="white"><b>Quicks Link</b></font></th>
+               <th bgcolor="black" width="25%" height="20%"><font color="white"><b>Follow Us</b></font></th>
+               <th bgcolor="black" width="25%" height="20%"><font color="white"><b>Contact</b></font></th>
+               <th bgcolor="black" width="25%" height="20%"><font color="white"><b>Search</b></font></th>
+           </tr>
+           <tr>
+               <td>
+                   <ul>
+                       <li><font color="white">Electronics</font></li>
+                       <li><font color="white">TVs & Appliances</font></li>
+                       <li><font color="white">Men</font></li>
+                       <li><font color="white">Women</font></li>
+                   </ul>
+               </td>
+         
+               <td>
+                   <ul>
+                       <div class="center">
+                        <li><a class="btn" href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="btn" href=""><i class="fa fa-youtube"></i></a></li>
+                        <li><a class="btn" href=""><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="btn" href=""><i class="fa fa-whatsapp"></i></a></li>
+            
+                </div>
+                   </ul>
+               </td>
+               
+               <td>
+                   <ul>
+                       <li><font color="white">BigBazar</font></li>
+                       <li><font color="white">Jerry</font></li>
+                       <li><font color="white">Prashant</font></li>
+                       <li><font color="white">Nitin</font></li>
+                   </ul>
+               </td>
+               
+               <td>
+                   <input type="text" placeholder="Search">
+                   <input type="button" value="Search">
+               </td>
+           </tr>
+            
+        </table>
+
+</body>
+</html>
